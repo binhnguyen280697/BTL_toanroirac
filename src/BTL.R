@@ -1,0 +1,7 @@
+library(readxl)
+library(utf8)
+Data_sv <- read_xlsx("Data/Data_sv.xlsx",sheet = NULL ,range = NULL,col_names = TRUE,col_types =NULL, na = "",trim_ws = TRUE,skip = 1,n_max = 26)
+View(Data_sv)
+str(Data_sv)
+SoluongSV <-  ncol(Data_sv)
+cat("So luong SV trong tep mau la :", SoluongSV -1)
